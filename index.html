@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TGV Worldwide Holidays - Curated Luxury Journeys</title>
+<meta name="description" content="TGV Worldwide Holidays crafts curated luxury journeys to the Maldives, Switzerland, Japan, Dubai and beyond. Personalized itineraries, private villas, dedicated travel experts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cinematic-intro" id="cinematicIntro" aria-hidden="true">
+  <div class="intro-curtain intro-curtain--left"></div>
+  <div class="intro-curtain intro-curtain--right"></div>
+  <div class="intro-content">
+    <img src="assets/tgv-logo.jpeg" alt="">
+    <span>Worldwide Holidays</span>
+    <p>Journeys, beautifully imagined</p>
+  </div>
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="top">
+  <div class="header-inner">
+    <a href="#top" class="logo" aria-label="TGV Worldwide Holidays home">
+      <img src="assets/tgv-logo.jpeg" alt="TGV Worldwide Holidays Pvt. Ltd. logo">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="payment.html" class="btn btn-ghost btn-small">Pay</a>
+      <a href="contact.html" class="btn btn-gold btn-small">Plan My Journey</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=2000&q=80" alt="Luxury overwater resort at sunset">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow">Bespoke Travel Concierge</p>
+    <h1 class="hero-title">Travel Beyond<br><em>Expectations</em></h1>
+    <p class="hero-sub">Curated luxury journeys crafted for extraordinary travelers.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-gold">Plan My Journey</a>
+      <a href="#destinations" class="btn btn-outline-light">Explore Destinations</a>
+    </div>
+  </div>
+
+  <!-- Search / Plan card -->
+  <div class="search-card" id="searchCard">
+    <form class="search-form" id="searchForm">
+      <div class="search-field">
+        <label for="destinationInput">Destination</label>
+        <input type="text" id="destinationInput" list="destinationList" placeholder="Where to?">
+        <datalist id="destinationList">
+          <option value="Maldives">
+          <option value="Switzerland">
+          <option value="Dubai">
+          <option value="Japan">
+          <option value="Italy">
+        </datalist>
+      </div>
+      <div class="search-field">
+        <label for="travelDates">Travel Dates</label>
+        <input type="text" id="travelDates" placeholder="Select dates" onfocus="this.type='date'">
+      </div>
+      <div class="search-field">
+        <label for="guestsSelect">Guests</label>
+        <select id="guestsSelect">
+          <option>2 Adults</option>
+          <option>Family (4)</option>
+          <option>Solo Traveler</option>
+          <option>Group (6+)</option>
+        </select>
+      </div>
+      <div class="search-field">
+        <label for="travelStyle">Travel Style</label>
+        <select id="travelStyle">
+          <option>Honeymoon</option>
+          <option>Adventure</option>
+          <option>Family Holiday</option>
+          <option>Business</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-gold search-submit">Search</button>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== TRUST STRIP ===================== -->
+<section class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-item"><span class="trust-num">15+</span><span class="trust-label">Years Experience</span></div>
+    <div class="trust-item"><span class="trust-num">50+</span><span class="trust-label">Countries</span></div>
+    <div class="trust-item"><span class="trust-num">10k+</span><span class="trust-label">Happy Travelers</span></div>
+    <div class="trust-item"><span class="trust-num">24/7</span><span class="trust-label">Support</span></div>
+  </div>
+  <p class="trust-caption">Trusted by luxury travelers worldwide</p>
+</section>
+
+<!-- ===================== SIGNATURE EXPERIENCES ===================== -->
+<section class="section experiences" id="experiences">
+  <div class="section-inner">
+    <p class="eyebrow center">Curated Styles</p>
+    <h2 class="section-title center">Signature Experiences</h2>
+    <p class="section-sub center">Curated styles of travel designed around your unique desires and preferences.</p>
+
+    <div class="experience-grid">
+
+      <a class="exp-card" href="#contact">
+        <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?auto=format&fit=crop&w=900&q=80" alt="Luxury Honeymoon">
+        <div class="exp-card-overlay">
+          <h3>Luxury Honeymoon</h3>
+          <span class="exp-link">Explore &rarr;</span>
+        </div>
+      </a>
+
+      <a class="exp-card" href="#contact">
+        <img src="https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=900&q=80" alt="Private Villas">
+        <div class="exp-card-overlay">
+          <h3>Private Villas</h3>
+          <span class="exp-link">Explore &rarr;</span>
+        </div>
+      </a>
+
+      <a class="exp-card" href="#contact">
+        <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=900&q=80" alt="Family Holidays">
+        <div class="exp-card-overlay">
+          <h3>Family Holidays</h3>
+          <span class="exp-link">Explore &rarr;</span>
+        </div>
+      </a>
+
+      <a class="exp-card" href="#contact">
+        <img src="https://images.unsplash.com/photo-1483401757582-12cb5d3f9c4f?auto=format&fit=crop&w=900&q=80" alt="Adventure Escapes">
+        <div class="exp-card-overlay">
+          <h3>Adventure Escapes</h3>
+          <span class="exp-link">Explore &rarr;</span>
+        </div>
+      </a>
+
+      <a class="exp-card" href="#contact">
+        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80" alt="Business Travel">
+        <div class="exp-card-overlay">
+          <h3>Business Travel</h3>
+          <span class="exp-link">Explore &rarr;</span>
+        </div>
+      </a>
+
+      <a class="exp-card" href="#contact">
+        <img src="https://images.unsplash.com/photo-1548574505-5e239809ee19?auto=format&fit=crop&w=900&q=80" alt="Cruise Experiences">
+        <div class="exp-card-overlay">
+          <h3>Cruise Experiences</h3>
+          <span class="exp-link">Explore &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ICONIC DESTINATIONS ===================== -->
+<section class="section destinations" id="destinations">
+  <div class="section-inner">
+    <div class="section-head-row">
+      <div>
+        <p class="eyebrow">Where Next</p>
+        <h2 class="section-title">Iconic Destinations</h2>
+      </div>
+      <a href="#packages" class="text-link">View All Destinations &rarr;</a>
+    </div>
+
+    <div class="destination-grid">
+      <a class="dest-card dest-card--large" href="#packages">
+        <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=1200&q=80" alt="Maldives">
+        <div class="dest-card-info"><h3>Maldives</h3><span>Discover &rarr;</span></div>
+      </a>
+      <a class="dest-card" href="#packages">
+        <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=900&q=80" alt="Switzerland">
+        <div class="dest-card-info"><h3>Switzerland</h3><span>Discover &rarr;</span></div>
+      </a>
+      <a class="dest-card" href="#packages">
+        <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=900&q=80" alt="Japan">
+        <div class="dest-card-info"><h3>Japan</h3><span>Discover &rarr;</span></div>
+      </a>
+      <a class="dest-card" href="#packages">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80" alt="Dubai">
+        <div class="dest-card-info"><h3>Dubai</h3><span>Discover &rarr;</span></div>
+      </a>
+      <a class="dest-card" href="#packages">
+        <img src="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&fit=crop&w=900&q=80" alt="Italy">
+        <div class="dest-card-info"><h3>Italy</h3><span>Discover &rarr;</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== THE TGV DIFFERENCE ===================== -->
+<section class="section difference">
+  <div class="section-inner">
+    <p class="eyebrow center">Why TGV</p>
+    <h2 class="section-title center">The TGV Difference</h2>
+
+    <div class="difference-grid">
+      <div class="diff-card">
+        <div class="diff-icon" aria-hidden="true">01</div>
+        <h3>Personalized Itineraries</h3>
+        <p>Every journey crafted to your exact specifications.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-icon" aria-hidden="true">02</div>
+        <h3>Luxury Accommodations</h3>
+        <p>Handpicked 5-star hotels and private villas.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-icon" aria-hidden="true">03</div>
+        <h3>Dedicated Experts</h3>
+        <p>A personal concierge assigned to your trip.</p>
+      </div>
+      <div class="diff-card">
+        <div class="diff-icon" aria-hidden="true">04</div>
+        <h3>24/7 Support</h3>
+        <p>Round-the-clock assistance wherever you are.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== YOUR JOURNEY BEGINS (route timeline) ===================== -->
+<section class="section journey" id="journey">
+  <div class="section-inner">
+    <p class="eyebrow center">The Process</p>
+    <h2 class="section-title center">Your Journey Begins</h2>
+
+    <div class="route-timeline">
+      <svg class="route-line" viewBox="0 0 1000 140" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,70 C150,10 250,130 400,70 C550,10 650,130 800,70 C900,30 950,90 1000,70" />
+      </svg>
+
+      <div class="route-stops">
+        <div class="route-stop">
+          <span class="route-dot">1</span>
+          <h3>Consultation &amp; Vision</h3>
+          <p>We listen first, understanding the trip you're imagining before we propose a single hotel.</p>
+        </div>
+        <div class="route-stop">
+          <span class="route-dot">2</span>
+          <h3>Itinerary Crafting</h3>
+          <p>Your dedicated expert builds a day-by-day route, balanced for pace, place, and pleasure.</p>
+        </div>
+        <div class="route-stop">
+          <span class="route-dot">3</span>
+          <h3>Refinement</h3>
+          <p>We revise together until every detail, from timing to room to table, feels exactly right.</p>
+        </div>
+        <div class="route-stop">
+          <span class="route-dot">4</span>
+          <h3>White-glove Booking</h3>
+          <p>Flights, stays, and experiences confirmed and secured, with nothing left for you to chase.</p>
+        </div>
+        <div class="route-stop">
+          <span class="route-dot">5</span>
+          <h3>Pre-departure Briefing</h3>
+          <p>A final walkthrough of your trip, documents, and contacts so you travel with total ease.</p>
+        </div>
+        <div class="route-stop">
+          <span class="route-dot">6</span>
+          <h3>The Experience</h3>
+          <p>You travel. We stay on call, quietly present in case you ever need us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CLIENT VOICES ===================== -->
+<section class="section testimonials">
+  <div class="section-inner">
+    <p class="eyebrow center">Client Voices</p>
+    <h2 class="section-title center">Stories From The Road</h2>
+
+    <div class="testimonial-grid">
+      <figure class="testimonial-card">
+        <blockquote>"TGV curated an experience beyond our wildest dreams. Every detail was flawless."</blockquote>
+        <figcaption>
+          <span class="t-name">Sarah &amp; James</span>
+          <span class="t-trip">Maldives Honeymoon</span>
+        </figcaption>
+      </figure>
+      <figure class="testimonial-card">
+        <blockquote>"Our family holiday was perfectly balanced with adventure and pure luxury. Highly recommended."</blockquote>
+        <figcaption>
+          <span class="t-name">The Thompson Family</span>
+          <span class="t-trip">Swiss Alps Retreat</span>
+        </figcaption>
+      </figure>
+      <figure class="testimonial-card">
+        <blockquote>"Impeccable service. They handled my complex itinerary with extraordinary professionalism."</blockquote>
+        <figcaption>
+          <span class="t-name">Michael R.</span>
+          <span class="t-trip">Dubai Business Elite</span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CURATED ITINERARIES / PACKAGES ===================== -->
+<section class="section packages" id="packages">
+  <div class="section-inner">
+    <p class="eyebrow center">Ready-Made, Tailored On Request</p>
+    <h2 class="section-title center">Curated Itineraries</h2>
+
+    <div class="package-grid">
+
+      <article class="package-card">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=900&q=80" alt="Maldives Escape">
+        </div>
+        <div class="package-body">
+          <h3>Maldives Escape</h3>
+          <p class="package-price"><span class="from">Starting from</span> INR 4,50,000 <span class="per">/ person</span></p>
+          <ul class="package-tags">
+            <li>6 Days</li>
+            <li>Overwater Villa</li>
+            <li>Seaplane Transfer</li>
+            <li>Private Dining</li>
+            <li>Spa Session</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-dark btn-block">View Details</a>
+        </div>
+      </article>
+
+      <article class="package-card package-card--featured">
+        <span class="package-badge">Signature</span>
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=900&q=80" alt="Swiss Alps Grandeur">
+        </div>
+        <div class="package-body">
+          <h3>Swiss Alps Grandeur</h3>
+          <p class="package-price"><span class="from">Starting from</span> INR 6,80,000 <span class="per">/ person</span></p>
+          <ul class="package-tags">
+            <li>8 Days</li>
+            <li>5-Star Alpine Resort</li>
+            <li>Glacier Express</li>
+            <li>Private Ski Guide</li>
+            <li>Gourmet Tour</li>
+          </ul>
+          <a href="#contact" class="btn btn-gold btn-block">View Details</a>
+        </div>
+      </article>
+
+      <article class="package-card">
+        <div class="package-img">
+          <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=900&q=80" alt="Japan Discovery">
+        </div>
+        <div class="package-body">
+          <h3>Japan Discovery</h3>
+          <p class="package-price"><span class="from">Starting from</span> INR 5,20,000 <span class="per">/ person</span></p>
+          <ul class="package-tags">
+            <li>10 Days</li>
+            <li>Ryokan Stay</li>
+            <li>Private Geisha Dinner</li>
+            <li>Bullet Train Pass</li>
+            <li>Temple Tours</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline-dark btn-block">View Details</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MOMENTS CAPTURED (gallery) ===================== -->
+<section class="section gallery-section">
+  <div class="section-inner">
+    <p class="eyebrow center">Moments Captured</p>
+    <h2 class="section-title center">A Glimpse Of The Journey</h2>
+
+    <div class="moments-grid">
+      <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?auto=format&fit=crop&w=700&q=80" alt="Maldives gallery">
+      <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=700&q=80" alt="Switzerland gallery">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=700&q=80" alt="Dubai gallery">
+      <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=700&q=80" alt="Japan gallery">
+      <img src="https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00?auto=format&fit=crop&w=700&q=80" alt="Honeymoon gallery">
+      <img src="https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=700&q=80" alt="Villas gallery">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BEGIN YOUR JOURNEY / CONTACT ===================== -->
+<section class="section contact-section" id="contact">
+  <div class="section-inner contact-inner">
+
+    <div class="contact-info">
+      <p class="eyebrow">Get In Touch</p>
+      <h2 class="section-title">Begin Your Journey</h2>
+      <p class="section-sub">Speak with our luxury travel concierges to design your extraordinary escape. We handle every detail so you can focus on the experience.</p>
+
+      <div class="contact-method">
+        <span class="contact-icon">Tel</span>
+        <div>
+          <strong>Call Us 24/7</strong>
+          <a href="tel:+919876543210">+91 98765 43210</a>
+        </div>
+      </div>
+      <div class="contact-method">
+        <span class="contact-icon">WA</span>
+        <div>
+          <strong>WhatsApp Direct</strong>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener">Message Concierge</a>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <h3>Request a Consultation</h3>
+
+      <div class="form-row">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required placeholder="Your full name">
+      </div>
+
+      <div class="form-row">
+        <label for="emailAddr">Email</label>
+        <input type="email" id="emailAddr" name="emailAddr" required placeholder="you@example.com">
+      </div>
+
+      <div class="form-row">
+        <label for="phoneNum">Phone</label>
+        <input type="tel" id="phoneNum" name="phoneNum" placeholder="+91 00000 00000">
+      </div>
+
+      <div class="form-row">
+        <label for="destInterest">Destination of Interest</label>
+        <select id="destInterest" name="destInterest">
+          <option>Maldives</option>
+          <option>Switzerland</option>
+          <option>Dubai</option>
+          <option>Japan</option>
+          <option>Italy</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="messageBox">Tell us about your dream trip</label>
+        <textarea id="messageBox" name="messageBox" rows="4" placeholder="Travel dates, number of guests, occasion..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-gold btn-block">Submit Request</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+
+    <div class="footer-col footer-brand">
+      <a href="#top" class="logo logo-light" aria-label="TGV Worldwide Holidays home">
+        <img src="assets/tgv-logo.jpeg" alt="TGV Worldwide Holidays Pvt. Ltd. logo">
+      </a>
+      <p>Curated luxury journeys crafted for extraordinary travelers. Experience travel beyond expectations with unhurried, tactile, cinematic itineraries.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="about.html">About Us</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Exclusive Packages</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>123 Luxury Avenue, Premium Block,<br>Mumbai, Maharashtra 400001, India</p>
+      <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+      <p><a href="mailto:concierge@tgvholidays.com">concierge@tgvholidays.com</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>Subscribe for exclusive offers and travel inspiration.</p>
+      <form class="footer-newsletter" id="newsletterForm" novalidate>
+        <input type="email" placeholder="Your email" required aria-label="Email for newsletter">
+        <button type="submit" class="btn btn-gold btn-small">Subscribe</button>
+      </form>
+      <p class="form-status" id="newsletterStatus" role="status" aria-live="polite"></p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 TGV Worldwide Holidays Pvt Ltd. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
+
+<script src="script.js"></script>
+</body>
+</html>
