@@ -4,6 +4,15 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ---------- Graceful fallback for unavailable travel photos ---------- */
+  document.querySelectorAll('img').forEach((image) => {
+    image.addEventListener('error', () => {
+      if (image.dataset.fallbackApplied || image.src.includes('tgv-logo.jpeg')) return;
+      image.dataset.fallbackApplied = 'true';
+      image.src = 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80';
+    });
+  });
+
   /* ---------- Cinematic opening (homepage only) ---------- */
   const cinematicIntro = document.getElementById('cinematicIntro');
   if (cinematicIntro) {
