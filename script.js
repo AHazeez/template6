@@ -172,6 +172,11 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Payment request (demo until gateway is connected) ---------- */
   const paymentForm = document.getElementById('paymentForm');
   const paymentStatus = document.getElementById('paymentStatus');
+  const paymentModal = document.getElementById('paymentModal');
+  const paymentCheckout = document.getElementById('paymentCheckout');
+  const paymentSuccess = document.getElementById('paymentSuccess');
+  const completeDemoPayment = document.getElementById('completeDemoPayment');
+  let paymentTrigger = null;
 
   if (paymentForm) {
     paymentForm.addEventListener('submit', (e) => {
@@ -186,7 +191,41 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      showStatus(paymentStatus, 'Details verified. Connect your payment gateway here to accept the payment securely.', 'success');
+      document.getElementById('modalBookingRef').textContent = reference;
+      document.getElementById('modalPayerName').textContent = name;
+      document.getElementById('modalAmount').textContent = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(amount);
+      paymentTrigger = e.submitter;
+      paymentCheckout.hidden = false;
+      paymentSuccess.hidden = true;
+      paymentModal.hidden = false;
+      document.body.classList.add('modal-open');
+      paymentModal.querySelector('.payment-modal-close').focus();
+    });
+  }
+
+  if (paymentModal) {
+    const closePaymentModal = () => {
+      paymentModal.hidden = true;
+      document.body.classList.remove('modal-open');
+      if (paymentTrigger) paymentTrigger.focus();
+    };
+
+    paymentModal.querySelectorAll('[data-close-payment]').forEach((button) => button.addEventListener('click', closePaymentModal));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !paymentModal.hidden) closePaymentModal();
+    });
+
+    completeDemoPayment.addEventListener('click', () => {
+      completeDemoPayment.disabled = true;
+      completeDemoPayment.textContent = 'Simulating payment…';
+      window.setTimeout(() => {
+        document.getElementById('demoReceipt').textContent = `TGV-DEMO-${Date.now().toString().slice(-6)}`;
+        paymentCheckout.hidden = true;
+        paymentSuccess.hidden = false;
+        completeDemoPayment.disabled = false;
+        completeDemoPayment.textContent = 'Pay securely — demo';
+        paymentSuccess.querySelector('button').focus();
+      }, 900);
     });
   }
 
